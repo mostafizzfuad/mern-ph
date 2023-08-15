@@ -26,7 +26,8 @@ console.log(friendsAge)
 console.log(popElement)
 
 
-
+// unshift : add element in the first
+// shift : remove element from the first
 
 
 
