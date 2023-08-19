@@ -20,7 +20,7 @@ var eggPrice = 13 // numeric
 var isSingle = true // boolean
 
 
-// variable declaration system ...
+// variable declaration system ...  (var , let , const)
 
 // keywords
 

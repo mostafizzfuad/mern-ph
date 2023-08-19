@@ -29,7 +29,16 @@ console.log(popElement)
 // unshift : add element in the first
 // shift : remove element from the first
 
+// slice()
+var number = [10, 20, 30, 40, 55, 57, 88, 42]
+console.log(number.slice(2,5))  // slice(kotoIndexThekeShuru, kotoIndexErAgePorjonto)
 
+// includes()
+var myName = 'My name is Fuad'
+console.log(myName.includes('is')) // true
+console.log(myName.includes('has')) // false
 
+// substring()
+console.log(myName.substring(0, 7))
 
 
