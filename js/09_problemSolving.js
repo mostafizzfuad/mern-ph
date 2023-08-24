@@ -72,3 +72,7 @@ function calculateFactorial(n) {
 }
 let factorial = calculateFactorial(5)
 console.log(factorial)
+
+
+// problem 8 : large between two numbers
+// problem 9 : large between three numbers
