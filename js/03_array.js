@@ -42,3 +42,14 @@ console.log(myName.includes('has')) // false
 console.log(myName.substring(0, 7))
 
 
+// join() 
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// Expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// Expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// Expected output: "Fire-Air-Water"
