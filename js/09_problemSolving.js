@@ -159,3 +159,36 @@ console.log(bestFriendName)
 
 
 
+
+// problem 16 : Remove duplicate items from an array
+
+function removeDuplicates(names) {
+    const unique = []
+    for (let i = 0; i < names.length; i++) {
+        if (unique.includes(names[i]) === false) {
+            unique.push(names[i])
+        } 
+    }
+    return unique
+}
+
+const names = ['fuad', 'junnun', 'siam', 'mostafizur', 'fuad', 'siam', 'rasel', 'fuad']
+const uniqueNames = removeDuplicates(names)
+console.log(uniqueNames)
+
+
+
+// problem 17 : suppose you have 1 - 30 numbers. if a number divisible by 3, then print 'hello'. if a number divisible by 3, then print 'world'. if the number divisible by 3 and 5 both print 'hello world'.
+
+for (let i = 0; i <= 30; i++) {
+    if (i % 3 === 0 && i % 5 === 0) console.log('hello world')
+    else if (i % 3 === 0) console.log('hello')
+    else if (i % 5 === 0) console.log('world')
+    else console.log(i)
+}
+
+
+
+
+
+
