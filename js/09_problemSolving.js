@@ -76,3 +76,86 @@ console.log(factorial)
 
 // problem 8 : large between two numbers
 // problem 9 : large between three numbers
+
+// problem 10 : find the max number in an array
+function findMaxNumber(numbers) {
+    let mx = numbers[0]
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > mx) {
+            mx = numbers[i]
+        } 
+    }
+    return mx
+}
+
+const heights = [60, 50, 180, 200, 40]
+const tallest = findMaxNumber(heights)
+console.log(tallest)
+
+// problem 11 : find the min number in an array
+
+// problem 12 : reverse a string (characters)
+function reverseString(text) {
+    let reversed = ''
+    for (let i = text.length - 1; i >= 0; i--) {
+        reversed += text[i]
+    }
+    return reversed
+}
+
+const myString = 'I am a good person'
+const reversed = reverseString(myString)
+console.log(reversed)
+
+
+// problem 13 : reverse a words
+function reverseWords(s) {
+    const words = s.split(' ')
+    const result = []
+    // [ 'I', 'am', 'a', 'good', 'person' ]
+    for (let i = words.length - 1; i >= 0; i--) {
+        result.push(words[i])
+    }
+    const rev = result.join(' ')
+    return rev
+}
+
+const str = 'I am a good person'
+const rev = reverseWords(str)
+console.log(rev)
+
+
+// problem 14 : fibonacci series
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+const fibo = [0, 1]
+for (let i = 2; i < 10; i++) {
+    fibo[i] = fibo[i - 1] + fibo[i - 2]
+}
+console.log(fibo)
+
+
+
+// problem 15 : একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে। 
+function bestFriend(friendsName) {
+
+    let mxx = friendsName[0].length
+    let mxIndex = 0
+    for (let i = 1; i < friendsName.length; i++) {
+
+        if (mxx < friendsName[i].length) {
+            mxx = friendsName[i].length 
+            mxIndex = i
+        }
+
+    }
+
+    return friendsName[mxIndex]
+
+}
+
+let friendsName = ['masud', 'musfiqur', 'siam', 'mostafizurRahman', 'dani']
+let bestFriendName = bestFriend(friendsName)
+console.log(bestFriendName)
+
+
+
